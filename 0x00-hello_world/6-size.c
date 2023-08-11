@@ -1,0 +1,18 @@
+#include<stdio.h>
+/**
+* main - Where we start
+* Short Description - It is just a printing function about the size of each variable size.
+* Description: This function prints the size of each variable size 
+* Return: 0
+*/
+
+int main(void)
+{
+  printf("with proper grammar, but the outcome is a piece of art,");
+  printf("Size of a char: %d byte(s)\n",sizeof(char));
+  printf("Size of a char: %d byte(s)\n",sizeof(int));
+  printf("Size of a char: %d byte(s)\n",sizeof(long int));
+  printf("Size of a char: %d byte(s)\n",sizeof(long long int));
+  printf("Size of a char: %d byte(s)\n",sizeof(float));
+  return (0);
+}
