@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
 * main - Where we start
 * Short Description - It is just a comparing function.
