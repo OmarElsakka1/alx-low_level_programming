@@ -6,7 +6,7 @@
 * main - Where we start (Polarity random numbers)
 * Short Description - It is just a comparing function
 * Description: Prints whether positive or negative and higher or not
-* Return 0
+* Return of main is mainly 0.
 */
 int main(void)
 {
