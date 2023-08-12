@@ -3,12 +3,11 @@
 #include <stdio.h>
 
 /**
-* main - Where we start
-* Short Description - It is just a comparing function.
-* Description: Prints whether the number is positive or negative
+* main - Where we start (Polarity random numbers)
+* Short Description - It is just a comparing function
+* Description: Prints whether positive or negative and higher or not
 * Return 0
 */
-
 int main(void)
 {
 	int n, last;
