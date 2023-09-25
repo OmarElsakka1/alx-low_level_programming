@@ -1,6 +1,7 @@
 #ifndef LISTS_LINKED
 #define LISTS_lINKED
 
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
