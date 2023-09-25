@@ -1,11 +1,11 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef LISTS_LINKED
+#define LISTS_lINKED
 
 #include <stdlib.h>
 
 /**
  * struct listint_s - singly linked list
- * @n: Integer variabe "n" represents the length of the linked list
+ * @n: Integer variabe "n" represents the number of elements in the list
  * @next: Points to the next node in the list
  *
  * Code by Omar El-Sakka
