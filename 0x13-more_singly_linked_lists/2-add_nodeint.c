@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Adds a new node at the beginning of a linked list of type listint+t
+ * add_nodeint - Adds a new node at the beginning of list of type listint+t
  * @head: Pointer of pinter to list head
- * @n: Number that will be stored in the new node
- * Return: Address of new nodes or Just NULL
+ * @n: Number for new node
+ * Return: Address of new node or null if not exist
  *
  * Code by Omar El-Sakka
  */
