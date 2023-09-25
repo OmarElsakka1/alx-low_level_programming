@@ -8,6 +8,7 @@
  *
  * Code by Omar El-Sakka
  */
+
 size_t listint_len(const listint_t *h)
 {
 	size_t number_of_nodes;
