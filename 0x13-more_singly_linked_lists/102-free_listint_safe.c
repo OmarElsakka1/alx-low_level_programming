@@ -1,44 +1,73 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - freeing the linked list (safe version)
- * @h: Head of linked list of type listint_t
+ * free_listp2 - freeing the linked list
+ * @head: head of the linked list.
  *
- * Return: number of nodes in linked list.
- *
+ * Return: Dude, there is no return
  * Made by: Omar El-Sakka
- *
  */
+void free_listp2(listp_t **head)
+{
+	listp_t *ptr_temp;
+	listp_t *ptr_curr;
 
+	if (head != NULL)
+	{
+		ptr_curr = *head;
+		while ((ptr_temp = ptr_curr) != NULL)
+		{
+			ptr_curr = ptr_curr->next;
+			free(ptr_temp);
+		}
+		*head = NULL;
+	}
+}
+
+/**
+ * free_listint_safe - freeing the linked list.
+ * @h: head of the linked list.
+ *
+ * Return: size of the the linked list.
+ */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *current, *runner, *head;
-	size_t h_i, r_i;
+	size_t nnodes = 0;
+	listp_t *hptr, *new, *add;
+	listint_t *curr;
 
-	if (h == NULL || *h == NULL)
-		return (0);
-
-	current = *h;
-	head = *h;
-	h_i = 0;
-
-	while (head != NULL)
+	hptr = NULL;
+	while (*h != NULL)
 	{
-		runner = *h;
-		for (r_i = 0; r_i < h_i; r_i++)
+		new = malloc(sizeof(listp_t));
+
+		if (new == NULL)
+			exit(98);
+
+		new->p = (void *)*h;
+		new->next = hptr;
+		hptr = new;
+
+		add = hptr;
+
+		while (add->next != NULL)
 		{
-			if (runner == current)
+			add = add->next;
+			if (*h == add->p)
 			{
 				*h = NULL;
-				return (h_i);
+				free_listp2(&hptr);
+				return (nnodes);
 			}
-			runner = runner->next;
 		}
-		current = head->next;
-		free(head);
-		head = current;
-		h_i++;
+
+		curr = *h;
+		*h = (*h)->next;
+		free(curr);
+		nnodes++;
 	}
+
 	*h = NULL;
-	return (h_i);
+	free_listp2(&hptr);
+	return (nnodes);
 }
