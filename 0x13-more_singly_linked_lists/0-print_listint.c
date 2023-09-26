@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -7,6 +8,7 @@
  * @h: head of list to print
  *
  * Return: length of the linked list
+ * Code by Omar El-Sakka
  */
 size_t print_listint(const listint_t *h)
 {
