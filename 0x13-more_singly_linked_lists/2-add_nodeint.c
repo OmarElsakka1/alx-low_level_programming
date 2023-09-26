@@ -1,5 +1,7 @@
-#include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
+#include "lists.h"
 
 /**
  * add_nodeint - Adds a new node at the beginning of a linked list of type listint+t
