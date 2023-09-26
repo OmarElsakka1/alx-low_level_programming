@@ -1,12 +1,9 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
- * free_listint - free a linked list.
- * @head: Address of the head of the linked list.
- * 
- * Made by: Omar El-Sakka
- **/
+ * free_listint - frees a listint_t list
+ * @head: pointer to the head of the list
+ */
 
 void free_listint(listint_t *head)
 {
