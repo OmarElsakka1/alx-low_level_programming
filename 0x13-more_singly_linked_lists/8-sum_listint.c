@@ -1,16 +1,15 @@
 #include "lists.h"
 
 /**
- * sum_listint - returns the sum of all the data (n)
- * @head: Address of the head of a list
+ * sum_listint - returns the sum of all the data in nodes
+ * @head: Address of the head of the linked list
  * Return: sum of all the data (n)
- *         or, it will be just 0 if the list is empty
- * Made by: Omar El-Sakka
+ *         Or it will be 0 if the list is empty
  */
 
 int sum_listint(listint_t *head)
 {
-	int summation= 0;
+	int summation = 0;
 
 	while (head != NULL)
 	{
