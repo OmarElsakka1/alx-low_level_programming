@@ -6,18 +6,17 @@
  *
  * @h: head of list to print
  *
- * Return: length of list
+ * Return: length of the linked list
  */
 size_t print_listint(const listint_t *h)
 {
-    size_t num = 0;
+	size_t num = 0;
 
-    while (h)
-    {
-        printf("%d\n", h->n);
-        num++;
-        h = h->next;
-    }
-
-    return (num);
+	while (h != NULL)
+	{
+		num++;
+		printf("%d\n", h->n);
+		h = h->next;
+	}
+	return (num);
 }
